@@ -1,0 +1,55 @@
+.scenes {
+    padding: 24px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            background-color: red;
+            border: none;
+            padding: 8px;
+            margin: 4px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .scenes__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    
+        & .iframes {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 50%;
+            padding-top: 16px;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
