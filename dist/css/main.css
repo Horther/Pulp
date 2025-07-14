@@ -11,22 +11,37 @@
   text-align: center;
 }
 .scenes__tabs__button {
-  background-color: transparent;
+  font-family: "Angkor", serif;
+  font-size: 20px;
   border: none;
-  border-bottom: 2px solid yellow;
   padding: 8px;
   margin: 4px;
+  background: none;
+  text-transform: uppercase;
+  color: red;
 }
 .scenes__tabs__button:hover {
   cursor: pointer;
 }
+.scenes__tabs__button--is-active {
+  border-bottom: 2px solid yellow;
+}
 .scenes .scenes__container {
   margin: 0 auto;
   text-align: center;
+  display: none;
+}
+.scenes .scenes__container--is-active {
+  display: block;
 }
 
 .hero {
   text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
 }
 
 * {

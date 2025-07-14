@@ -1,6 +1,5 @@
 .scenes {
     
-    
     h3 {
         padding: 8px;
         margin-top: 24px;
@@ -15,22 +14,37 @@
         margin: 0 auto;
         text-align: center;
         
+        
         &__button {
-            background-color: transparent;
+            font-family: "Angkor", serif;
+            font-size: 20px;
             border: none;
-            border-bottom: 2px solid yellow;
             padding: 8px;
             margin: 4px;
+            background: none;
+            text-transform: uppercase;
+            color: red;
 
             &:hover {
                 cursor: pointer;
             }
+
+            &--is-active{
+                border-bottom: 2px solid yellow;
+            }
         }
+
+        
     }
 
     & .scenes__container {
         margin: 0 auto;
         text-align: center;
+        display: none;
+
+        &--is-active{
+            display: block;
+        }
     }
 
 

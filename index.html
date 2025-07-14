@@ -12,32 +12,32 @@
 <body>
     <section class="hero">
         <div class="hero__content">
-            <img src="./dist/images/" alt="Poster">
+            <img src="./dist/images/poster2.png" alt="Poster">
         </div>
     </section>
     <section class="scenes">
         <h1 class="title">Cenas Emblematicas</h1>
         <div class="scenes__tabs">
             <nav>
-                <button data-tab-button="royal"     class="scenes__tabs__button     scenes__tabs__button--is-active "><p class="text">Royal</p> 
+                <button data-tab-button="royal"     class="scenes__tabs__button  ">Royal 
                 </button>
                 <button data-tab-button="praise"    class="scenes__tabs__button">
-                    <p class="text">Praise</p> 
+                   Praise 
                 </button>
                 <button data-tab-button="where"     class="scenes__tabs__button">
-                    <p class="text">Where</p> 
+                    Where 
                 </button>
             </nav>
         </div>
-        <div class="scenes__container">
+        <div class="scenes__container " data-tab-id="royal">
             <h3>royal</h3>
             <iframe class="iframes" width="602" height="480" src="https://www.youtube.com/embed/ab7eVVG3I8s" title="Pulp Fiction | &#39;Royale w/ Cheese&#39; (HD) - John Travolta, Samuel L. Jackson | MIRAMAX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="scenes__container">
+        <div class="scenes__container scenes__container--is-active" data-tab-id="praise">
             <h3>praise</h3>
             <iframe width="602" height="480" src="https://www.youtube.com/embed/x2WK_eWihdU" title="Ezekiel 25:17 - Pulp Fiction (3/12) Movie CLIP (1994) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="scenes__container">
+        <div class="scenes__container" data-tab-id="where">
             <h3>where</h3>
             <iframe width="602" height="480" src="https://www.youtube.com/embed/RqJVa0fl01w" title="Original Confused Travolta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -47,5 +47,7 @@
             <p class="title--small">Todos os direitos reservados aos seus criadores</p>
         </div>
     </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
